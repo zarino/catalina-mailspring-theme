@@ -1,0 +1,61 @@
+.sheet-toolbar {
+    height: 37px !important;
+    min-height: 37px !important;
+    max-height: 37px !important;
+
+    .btn-toolbar {
+        margin-left: 8px;
+        margin-right: 8px;
+        margin-top: 0;
+        line-height: 22px;
+        height: 22px;
+        box-shadow: @base-btn-box-shadow !important; // even when window is blurred
+
+        img.content-mask {
+            margin-bottom: 3px;
+        }
+
+        &:only-of-type {
+            margin-right: 8px;
+        }
+    }
+
+    .message-toolbar-items {
+        order: -100; // left-align message buttons, so they’re closer to the message list
+    }
+}
+
+.sheet-toolbar-container > * {
+    height: 100%;
+}
+
+.sheet-toolbar {
+    .item-container {
+        align-items: center;
+
+        & > * {
+            margin-top: 0 !important;
+        }
+    }
+
+    .button-group {
+        margin-left: 8px;
+    }
+}
+
+.toolbar-window-controls {
+    margin-left: 10px;
+}
+
+.thread-search-bar,
+.contact-search {
+    padding: 0 8px;
+    line-height: 22px;
+    height: 22px;
+    width: 100%;
+
+    .search-accessory {
+        width: 14px;
+        height: 14px;
+    }
+}
